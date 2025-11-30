@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn Job Filters</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>LinkedIn Job Filter</h1>
+      <p class="subtitle">Hide jobs by keywords</p>
+      <div class="toggle-section">
+        <span class="toggle-label">Filter Enabled</span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="filterToggle" checked>
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="keyword-input-section">
+      <div class="input-group">
+        <input 
+          type="text" 
+          id="keywordInput" 
+          placeholder="Enter keyword to filter (e.g., 'remote', 'contractor')"
+          autocomplete="off"
+        />
+        <button id="addKeywordBtn" class="btn btn-primary">Add</button>
+      </div>
+    </div>
+
+    <div class="keywords-section">
+      <h2>Filtered Keywords</h2>
+      <div id="keywordsList" class="keywords-list">
+        <p class="empty-state">No keywords added yet</p>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button id="clearAllBtn" class="btn btn-secondary">Clear All</button>
+    </div>
+  </div>
+
+  <!-- Confirmation Modal -->
+  <div id="confirmModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modalTitle">Success</h3>
+      </div>
+      <div class="modal-body">
+        <p id="modalMessage">Keyword updated successfully!</p>
+        <p class="modal-subtext">Refreshing LinkedIn jobs page...</p>
+      </div>
+      <div class="modal-footer">
+        <button id="modalOkBtn" class="btn btn-primary">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+
