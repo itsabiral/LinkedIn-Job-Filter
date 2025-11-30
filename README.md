@@ -29,7 +29,12 @@ Install From Repo:
 - No data is sent to external servers
 - The extension only runs on LinkedIn job pages
 
+## Screenshot
+![Filtering Software Keyword](https://github.com/itsabiral/LinkedIn-Job-Filter/blob/main/Screenshots/ss1.jpg?raw=true)
+![Filtering Software Keyword](https://github.com/itsabiral/LinkedIn-Job-Filter/blob/main/Screenshots/ss2.jpg?raw=true)
+
 ## License
 
 MIT License - feel free to modify and use as needed.
+
 
